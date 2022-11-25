@@ -1,4 +1,3 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./src/**/*.tsx'],
   theme: {
@@ -17,10 +16,10 @@ module.exports = {
       },
       colors: {
         brand: {
-            base: '#338896',
-            hover: '#3FA7B8',
-            text: '#F7F7F7',
-          },
+          base: '#338896',
+          hover: '#3FA7B8',
+          text: '#F7F7F7',
+        },
         header: {
           dark: '#202020',
           light: '#f7f7f7',
@@ -73,7 +72,9 @@ module.exports = {
             200: '#353535',
           },
         },
-        
+      },
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
       },
     },
   },

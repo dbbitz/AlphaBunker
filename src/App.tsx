@@ -1,11 +1,15 @@
-
+import { Router } from "./routes"
+import { BrowserRouter } from "react-router-dom"
+import './styles/global.css'
 
 
 function App() {
 
 
   return (
-    <h1>Projeto Alpha Bunker</h1>
+    <BrowserRouter>
+        <Router/>
+    </BrowserRouter>
   )
 }
 

@@ -8,7 +8,7 @@
     @apply font-inter font-semibold p-0 m-0 box-border outline-none;
 }
 body {
-  @apply font-inter flex flex-col items-center w-screen h-screen bg-gradient-to-br from-[#010101] via-[#050114,#23072D] to-[#130214];
+  @apply flex flex-col items-center w-screen h-screen bg-body-light-200;
 }
 #root {
     @apply flex flex-col items-center w-screen h-screen;
