@@ -7,6 +7,6 @@ interface PropTypes {
 }
 export const Button = ({label, category, className}:PropTypes) => {
     return (
-        <button></button>
+        <button className={className}>{label}</button>
     )
 }

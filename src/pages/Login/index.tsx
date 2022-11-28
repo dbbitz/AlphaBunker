@@ -15,8 +15,9 @@ export const Login = () => {
                 <Input label="Digite seu CPF"/>
                 <Input label="Digite sua senha"/>
             </div>
-            <div className="flex flex-col justify-center gap-2">
-                <Button label="Entrar" category="primary"/>
+            <div className="flex flex-col justify-center gap-2 w-full">
+                <Button label="Entrar" category="primary" className="bg-btn-primary-base flex flex-row justify-center items-center p-2.5 gap-2.5 rounded text-white"/>
+                <span className="text-center text-sm text-[#353535]">Crie sua conta</span>
             </div>
         </div>
       </div>

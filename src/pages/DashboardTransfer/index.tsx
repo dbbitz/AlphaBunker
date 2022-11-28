@@ -1,7 +1,8 @@
+import { Header } from "../../components/Header";
 export const DashboardTransfer = () => {
   return (
     <>
-      <h1>AlphaBunker</h1>
+      <Header/>
     </>
   );
 };
