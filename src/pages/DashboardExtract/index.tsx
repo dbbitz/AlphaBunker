@@ -4,7 +4,7 @@ import { Transation } from '../../components/Transation';
 export const DashboardExtract = () => {
   return (
     <>
-      <Header />
+      <Header username='Dhesem' agency='1510-5' account='95785-3' />
       <section className="h-[405px] w-full absolute flex flex-col justify-center items-center py-3 px-4 gap-4 mt-[235px]">
         <div className="bg-[#ffffff] text-[#ffffff] flex flex-col items-center py-3 px-4 gap-6 rounded-md border-solid w-full">
           <div className="flex items-center justify-between gap-[35px] text-header-gold w-full">

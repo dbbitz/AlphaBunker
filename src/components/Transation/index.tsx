@@ -24,7 +24,7 @@ export const Transation = ({ category, value }: PropTypes) => {
       return (
         <div className="flex justify-between w-full">
           <span>Saque</span>
-          <span className="text-input-error">-R${value}</span>
+          <span className="text-input-error">- R${value}</span>
         </div>
       );
     case 'deposito':
