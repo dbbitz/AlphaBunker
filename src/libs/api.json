@@ -1,6 +1,74 @@
 {
-    "balance": [{
-        "id": 1,
-        "value": 2000.00
-    }]
+  "balance": [
+    {
+      "id": 1,
+      "value": 2000
+    }
+  ],
+  "transactions": [
+    {
+      "type": "transfer-send",
+      "value": 3432423,
+      "receipt": {
+        "agency": "3524",
+        "account": "432423"
+      },
+      "sender": null,
+      "id": 1
+    },
+    {
+      "type": "deposit",
+      "value": 342432,
+      "receipt": {
+        "agency": "1510-5",
+        "account": "95785-3"
+      },
+      "sender": null,
+      "id": 2
+    },
+    {
+      "type": "withdraw",
+      "value": 534534,
+      "receipt": null,
+      "sender": null,
+      "id": 3
+    },
+    {
+      "type": "transfer-send",
+      "value": 0,
+      "receipt": {
+        "agency": "",
+        "account": ""
+      },
+      "sender": null,
+      "id": 4
+    },
+    {
+      "type": "deposit",
+      "value": 34234,
+      "receipt": {
+        "agency": "1510-5",
+        "account": "95785-3"
+      },
+      "sender": null,
+      "id": 5
+    },
+    {
+      "type": "deposit",
+      "value": 43242,
+      "receipt": {
+        "agency": "1510-5",
+        "account": "95785-3"
+      },
+      "sender": null,
+      "id": 6
+    },
+    {
+      "type": "withdraw",
+      "value": 2333,
+      "receipt": null,
+      "sender": null,
+      "id": 7
+    }
+  ]
 }
