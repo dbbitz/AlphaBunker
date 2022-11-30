@@ -29,10 +29,10 @@ export const Router = () => {
 
       <Route path="/profile/" element={<Profile />} />
 
-      <Route path="/transaction/transfersent" element={<TransactionTransferSent />}/>
-      <Route path="/transaction/withdraw" element={<TransactionWithdraw />} />
-      <Route path="/transaction/deposit" element={<TransactionDeposit />} />
-      <Route path="/transaction/receivedtransfer" element={<TransactionReceivedTransfer />} />
+      <Route path="/transaction/transfersent/:transactionId" element={<TransactionTransferSent />}/>
+      <Route path="/transaction/withdraw/:transactionId" element={<TransactionWithdraw />} />
+      <Route path="/transaction/deposit/:transactionId" element={<TransactionDeposit />} />
+      <Route path="/transaction/receivedtransfer/:transactionId" element={<TransactionReceivedTransfer />} />
     </Routes>
   );
 };

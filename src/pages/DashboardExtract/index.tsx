@@ -4,13 +4,14 @@ import { Transation } from '../../components/Transation';
 import { useEffect, useState } from 'react';
 import { getTransactions } from '../../helper/handleTrasaction';
 import { TransacitionTypes } from '../../helper/handleTrasaction';
+import { useNavigate } from 'react-router-dom';
 
 export const DashboardExtract = () => {
   const [transactions, setTransactions] = useState<TransacitionTypes[]>([]);
-
+  const navigate = useNavigate();
   useEffect(() => {
     getTransactions(setTransactions);
-  },[]);
+  }, []);
 
   return (
     <>
@@ -30,12 +31,13 @@ export const DashboardExtract = () => {
               <div className="flex flex-col items-start w-full px-[5px] gap-[5px] text-input-inactive text-sm font-medium">
                 {transactions.map((transaction) => (
                   <Transation
+                    id={transaction.id}
                     type={transaction.type}
                     value={transaction.value}
+                    
                     key={transaction.id}
                   />
                 ))}
-                
               </div>
             </div>
             <div></div>

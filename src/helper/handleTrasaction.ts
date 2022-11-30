@@ -1,10 +1,11 @@
 import { api } from "../libs/api";
 
 export interface TransacitionTypes {
+    id?: number;
     type: 'transfer-send' | 'transfer-received' | 'deposit' | 'withdraw';
     value: number;
-    receipt: {agency: string , account: string} | null;
-    sender: {agency: string , account: string} | null;
+    receipt?: {agency: string , account: string} | null;
+    sender?: {agency: string , account: string} | null;
 }
 
 export async function handleTransaction({type, value, receipt, sender}:TransacitionTypes) {
@@ -22,7 +23,7 @@ export async function handleTransaction({type, value, receipt, sender}:Transacit
 export async function getTransactions(setTransaction: any) {
     try {
         const { data } = await api.get<TransacitionTypes>('/transactions')
-        console.log(data);
+        
         setTransaction(data)
         
         return data
@@ -33,3 +34,18 @@ export async function getTransactions(setTransaction: any) {
         
     }
 }
+
+export async function  getTransactionForId(id:number) {
+    try {
+        const { data } = await api.get<TransacitionTypes[]>('/transactions', {
+          params: {
+            id: id,
+          },
+        });
+        
+        return data[0]
+
+      } catch (error) {
+        console.log(error);
+      }
+    }
