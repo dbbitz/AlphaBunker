@@ -37,13 +37,13 @@ export const DashboardDeposit = () => {
       )}
       <Header username="Dhesem" agency="1510-5" account="95785-3" />
       <section className="w-full h-screen mt-[68%] flex items-center justify-center px-[40px]">
-        <div className="bg-[#ffffff] flex flex-col w-full items-center py-3 px-4 rounded-lg my-3 gap-4">
+        <div className="bg-[#ffffff] flex flex-col w-full items-center py-3 px-4 rounded-lg my-3 gap-4 dark:bg-body-dark dark:border-btn-secondary-base border" >
           <div className="flex items-center gap-2.5 w-full text-base text-icon-gold">
             <UploadSimple size={20} />
             Depósito
           </div>
           <div className="flex flex-col items-start gap-2.5 w-full">
-            <span className="text-base text-paragraph-dark font-normal">
+            <span className="text-base text-paragraph-dark font-normal text-brand-text">
               Dados para depósito
             </span>
             <div className="flex items-start gap-[30px] w-full">

@@ -52,7 +52,9 @@ export const Header = ({ username, agency, account }: PropTypes) => {
           <span className="text-xl leading-6 font-medium">
             Bem-vindo, {username}!
           </span>
-          <UserCircle size={25} />
+          <UserCircle size={25} onClick={() => {
+            navigate('/profile')
+          }} />
         </div>
         <div className="flex justify-center items-start gap-2.5">
           <Option

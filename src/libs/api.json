@@ -69,6 +69,26 @@
       "receipt": null,
       "sender": null,
       "id": 7
+    },
+    {
+      "type": "transfer-send",
+      "value": 0,
+      "receipt": {
+        "agency": "",
+        "account": ""
+      },
+      "sender": null,
+      "id": 8
+    },
+    {
+      "type": "transfer-send",
+      "value": 1343241231,
+      "receipt": {
+        "agency": "4311",
+        "account": "4234"
+      },
+      "sender": null,
+      "id": 9
     }
   ]
 }

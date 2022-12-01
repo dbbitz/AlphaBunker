@@ -26,7 +26,7 @@ export const TransactionReceivedTransfer = () => {
     <>
       <Header username="Dhesem" agency="1510-5" account="95785-3" />
       <section className="mt-[235px] flex justify-center items-center h-screen w-full px-[23px]">
-        <div className="flex flex-col items-start px-[15px] py-3 gap-6 w-full bg-[#ffffff] rounded ">
+        <div className="flex flex-col items-start px-[15px] py-3 gap-6 w-full bg-[#ffffff] rounded dark:bg-body-dark dark:border-btn-secondary-base border">
           <div className="flex justify-start items-center gap-3 text-icon-gold">
             <Receipt size={24} weight="bold" />
             <span className="text-base">Comprovante de transação</span>
@@ -47,7 +47,7 @@ export const TransactionReceivedTransfer = () => {
               </div>
             </div>
             <div className="flex justify-between px-2 pb-2 w-full">
-              <span>Valor</span>
+              <span className='text-paragraph-light-200 dark:text-paragraph-light-100'>Valor</span>
               <span className="text-[#53D496]">
                 + R$ {transaction?.value},00
               </span>

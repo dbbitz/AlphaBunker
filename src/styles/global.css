@@ -8,7 +8,7 @@
     @apply font-inter font-semibold p-0 m-0 box-border outline-none;
 }
 body {
-  @apply flex flex-col items-center w-screen h-screen bg-body-light-200;
+  @apply flex flex-col items-center w-screen h-screen bg-body-light-200 dark:bg-body-dark;
 }
 #root {
     @apply flex flex-col items-center w-screen h-screen;
